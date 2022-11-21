@@ -1,0 +1,50 @@
+Objects in Javascript:
+
+* Objects in Javascript are distinct and collection of unordered data in the form of Key & Value pairs.
+* JS objects has properties associated with it in order to define its characteristics.
+* One can access the properties of an object using bracket.
+
+Syntax for declaring a Simple object in Javascript is as follows:
+
+    var Objectname = { key1: "Value1", Key2:"value2", Key3:"value3", ..... KeyN: "ValueN" }
+
+Example:
+
+    var Student = { name: "Sathiya", City: "Chennai", Year: "2022"};
+
+Here Name , City, Year are the all "keys" and their corresponding answers are all "Values:.
+
+
+Below mentioned are the few major takeaways from Objects in Javascript:
+
+
+(1) Objects are called only be reference, not by value.
+Below Example suits well for the explanation:
+
+const person = {
+  firstName:"Sathiya",
+  lastName:"Pramod",
+  age:25, 
+  }
+
+const x = person: //Will not create copy of person
+
+const x = person;
+x.age = 10;      // Will change both x.age and person.age
+
+ 
+
+(2) An object can even be declared as a Value inside a Parent object in Javascript.
+
+E.g. :
+var Student = { name: "Sathiya", 
+                City: "Chennai",
+                Year: "2022"
+                Details: {firstName: "Sathiya", lastName: "Pramod", Age: "25"}};
+
+console.log(Student.name);  // Sathiya
+console.log(Student.City);  // Chennai
+console.log(Student.Details.Age);  // 25
+
+Here values for the "Details" are themselves given as an object to furnish the further Required data. 
+
