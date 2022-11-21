@@ -21,15 +21,15 @@ Below mentioned are the few major takeaways from Objects in Javascript:
 (1) Objects are called only be reference, not by value.
 Below Example suits well for the explanation:
 
-const person = {
+var person = {
   firstName:"Sathiya",
   lastName:"Pramod",
   age:25, 
   }
 
-const x = person: //Will not create copy of person
+var x = person: //Will not create copy of person
 
-const x = person;
+var x = person;
 x.age = 10;      // Will change both x.age and person.age
 
  
