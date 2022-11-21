@@ -1,0 +1,20 @@
+---HTTP1.1------ 
+
+* HTTP1.1 was introduced in 1997. 
+* It works on the textual format
+* It uses requests resource Inlining for use getting multiple pages.
+* It compresses data by itself.
+* Limitation of HTTP1.1 is head of line blocking that blocks all the requests behind it until it doesn’t get its all resources.
+
+---HTTP2-------
+
+* It was introduced in 2015 considering the shortcomings of HTTP1.1 using Google's SPDY protocol.
+* it works on the binary protocol.
+* It allows multiplexing so that one TCP connection is required for multiple requests from client to server.
+* It uses PUSH frame by server that collects all multiple pages.
+* It uses HPACK for data compression.
+
+
+The major advantage of HTTP2 is instead of waiting for the client to request for assets (like JS and CSS),
+the server can “push” the resources it believes would be required by the client. It Avoids the round trip.
+
