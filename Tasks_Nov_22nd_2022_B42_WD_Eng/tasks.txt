@@ -1,1 +1,29 @@
+Window Object versus Document Object:
+
+Window Object:
+
+    * It is the outermost and topmost element of the Object hierarchy.
+    * Window object can be accessed using the following property
+
+            Syntax:
+                window.property_name
+            e.g.
+                window.alert("Hello World")  // Displays Alert message as Hello World 
+
+    * Window object is a part of BOM (Browser Object Model) and contains the document object in it. 
+
+
+Document Object:
+
+    * The document object is a part of the window object which contains elements that can be accessed to modify HTML, javascript and CSS styles.
+    * Document object is the property of Window object and can be accessed using the property
+
+            Syntax:
+                document.property_name
+            E.g.
+                document.write() //Displays the content"hello world" on the webpage  
+
+    * Document object is a part of BOM and DOM (Document Object Model).
+
+
 
