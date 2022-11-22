@@ -15,7 +15,7 @@ Example:
 Here Name , City, Year are the all "keys" and their corresponding answers are all "Values:.
 
 
-Below mentioned are the few major takeaways from Objects in Javascript:
+Below mentioned are the few Takeaways from Objects in Javascript:
 
 
 (1) Objects are called only be reference, not by value.
