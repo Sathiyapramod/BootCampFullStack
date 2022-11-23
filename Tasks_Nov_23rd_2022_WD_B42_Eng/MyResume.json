@@ -1,0 +1,112 @@
+{
+    "General": {
+      "name": "Sathiyapramod K R",
+      "picture": "",
+      "email": "sathiyapramod22@gmail.com",
+      "phone": "",
+      "degree": "B.tech., Civil Engineering",
+      "GitHub Profile": "https://github.com/Sathiyapramod",
+      "summary": "Alumni from PEC, Pondicherry",
+      "location": {
+        "address": "",
+        "postalCode": "600001",
+        "city": "Pondicherry",
+        "countryCode": "INDIA",
+        "region": "South India"
+      },
+      "profiles": [
+        {
+          "LinkedIn": "https://www.linkedin.com/in/sathiyapramod-raghavendran-97a26575/",
+          "Twitter": "https://twitter.com/Sathiyapramod",
+          "url": ""
+        }
+      ]
+    },
+    "work": [
+      {
+        "company": "Larsen & Toubro Limited",
+        "position": "Assistant Construction Manager",
+        "website": "",
+        "startDate": "2014",
+        "endDate": "2022",
+        "summary": "Assistant Construction Manager - Civil",
+        "highlights": [
+          "Involved in WO & PO Rate finalization for Civil Items, Collaboration with Project Teams for Rate Negotiations & Subcontractor finalizing. Leading the Project Team for Civil Works at various Substation Projects."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "institution": "Pondicherry Engineering College",
+        "area": "B.tech., Civil Engineering",
+        "studyType": "UG",
+        "startDate": "2010",
+        "endDate": "2014",
+        "gpa": "8.19",
+        "courses": [
+          "Civil Engineering"          
+        ],
+        "Projects":"Application of GIS in Solid Waste Management for Pondicherry Region"
+      }
+    ],
+    "skills": [
+      {
+        "name": "AutoCAD",
+        "level": "Basic",
+        "keywords": [
+          "Drafting of 2D drawings and Studying the inputs"
+        ]
+      }
+      ,
+      {
+        "name": "Project Co-ordination",
+        "level": "",
+        "keywords": [
+          "Resource Allocation, Project Management"
+        ]
+      }
+    ],
+    "languages": [
+      {
+        "language": "English",
+        "fluency": "Professional Proficiency"
+      }
+      ,
+      {
+        "language": "Tamil",
+        "fluency": "Professional Proficiency"
+      }
+      ,
+      {
+        "language": "Hindi",
+        "fluency": "Professional Proficiency"
+      }
+      ,
+      
+      {
+        "language": "Telugu",
+        "fluency": "Limited Working Proficiency"
+      }
+      ,
+      
+      {
+        "language": "Kannada",
+        "fluency": "Limited Working Proficiency"
+      }
+    ],
+    "interests": [
+      {
+        "name": "Sports",
+        "keywords": [
+          "Cricket"
+        ]
+      }
+      ,
+      {
+        "name": "Current Affairs",
+        "keywords": [
+          "Geopolitics", "Technology", "Infrastructure"
+        ]
+      }
+    ]
+  }
