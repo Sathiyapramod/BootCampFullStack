@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //creating an XHR object
+        var input = new XMLHttpRequest();
+        
+        //Step1 - opening the Connection to APIs
+
+        input.open("GET", "https://restcountries.com/v3.1/all");
+
+        //Step2 - Initiating the request to access the APIs
+        
+        input.send();
+
+        //Step3- onload the Request using Anonymous function in JS
+
+        input.onload = function() {
+            data = input.response   //Step4 - getting response from the APIs
+            var result = JSON.parse(data);  //parsing the JSON object to readable format
+            console.log(result);  //simple console for checking the JSON objects obtained from APIs
+
+            // Console operation using various loops 
+
+            //type 1 : Normal for loop
+
+            for(var i=0;i<result.length;i++)
+                console.log(result[i].continents)  //displaying the continent names of 250 countries 
+            
+
+            // type2: for in loop
+
+            for(var index in result)
+                console.log(result[index].capital)  //displaying the capitals of 250 countries
+
+
+            // type3: for of loop
+
+            for(var x of result)
+                console.log(x.population)   //displaying population for 250 countries  
+
+            //type4: for each loop
+                        
+            result.forEach(function(result){
+                console.log(result.area , result.currencies)  //displaying Area and languages
+            });}    
+            
+     
+    </script>
+</body>
+</html>
