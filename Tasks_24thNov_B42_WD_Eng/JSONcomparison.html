@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var obj1 = { name: "person1", age: 20 };
+        var obj2 = { age: 20, name: "person1" };
+
+        //comparison using JSON stringify method
+
+        let object1 = JSON.stringify(obj1);
+        let object2 = JSON.stringify(obj2);
+
+        if (object1 == object2)
+            console.log("true");
+        else
+            console.log("false");
+
+        //comparison using object and key:value data available 
+
+        var flag = true;
+
+        if (Object.keys(obj1).length == Object.keys(obj2).length) {
+            for (key in obj1) {
+                if (obj1[key] == obj2[key]) {
+                    continue;
+                }
+                else {
+                    flag = false;
+                    break;
+                }
+            }
+        }
+        else {
+            flag = false;
+        }
+        console.log(flag);
+    </script>
+</body>
+
+</html>
