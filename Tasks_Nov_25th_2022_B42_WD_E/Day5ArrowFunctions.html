@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        // Printing all odd numbers in an array
+
+        console.log("Printing all odd numbers in an array");
+
+        var arr = [10,25,30,45,50];
+
+        var OddNumbers = (arr) => {
+            let result = [];
+            for(var i=0;i<arr.length;i++){
+                if(arr[i] % 2 != 0)
+                    result += arr[i]+" ";
+            }
+            return result;
+        }
+        console.log(OddNumbers(arr));
+
+        //Converting all strings into Title caps 
+
+        var str = "helloworld";
+
+        var ConvertString = (str)=>{
+            var result = "";
+            for(var i in str){
+                result = str.toUpperCase();
+            }
+            return result;
+        }
+        console.log(ConvertString(str));
+
+        //Sum of all Numbers in an array
+
+        var SumArray = (arr)=>{
+            let sum = 0;
+            for(var i in arr){
+                sum += arr[i];
+            }
+            return sum;
+        }
+        console.log(SumArray(arr));
+
+        //returning all prime numbers in an array
+
+        var arr1 = [2,5,6,7,8,9,10];
+
+        arr1 = arr1.filter((number) => {
+            for(var i=2; i< Math.sqrt(number); i++){
+                if(number % i === 0) return false; }
+                return true;
+        });
+        console.log(arr1);
+
+        //return all palindromes in an array 
+
+        let stringArray =["malayalam", "hindi", "telugu","sky","liril"];
+
+        stringArray = stringArray.filter((w) => {
+            let len = w.length;
+            for(var i=0;i<len/2; i++){
+                if(w[i] == w[len-i-1])
+                    return true;
+                else
+                    return false;
+            }
+        });
+
+        console.log(stringArray);
+
+
+    </script>
+</body>
+</html>

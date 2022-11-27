@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Anonymous functions 
+
+        //printing all odd numbers in an array
+
+        var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+
+        var result = function (arr) {
+            let array = [];
+            for (var i in arr) {
+                if (arr[i] % 2 != 0)
+                    array.push(arr[i]);
+            }
+            return array;
+        }
+        console.log(result(arr));
+
+        //converting all Strings to uppercase
+
+        var str = "helloworld";
+
+        var ConvertString = function (str) {
+            var result = "";
+            for (var i in str) {
+                result = str.toUpperCase();
+            }
+            return result;
+        }
+        console.log(ConvertString(str));
+
+        var SumArray = function (arr) {
+            let sum = 0;
+            for (var i in arr)
+                sum += arr[i];
+            return sum;
+        }
+        console.log(SumArray(arr));
+
+        //Returning all prime numbers in an array
+
+        var arr1 = [2, 5, 6, 7, 8, 9, 10];
+
+        arr1 = arr1.filter((number) => {
+            for (var i = 2; i < Math.sqrt(number); i++) {
+                if (number % i === 0) return false;
+            }
+            return true;
+        });
+        console.log(arr1);
+
+        //return all palindromes in an array 
+
+        let stringArray = ["malayalam", "hindi", "telugu", "sky", "liril"];
+
+        stringArray = stringArray.filter((w) => {
+            let len = w.length;
+            for (var i = 0; i < len / 2; i++) {
+                if (w[i] == w[len - i - 1])
+                    return true;
+                else
+                    return false;
+            }
+        });
+
+        console.log(stringArray);
+
+        //returning median of two sorted arrays of same sizes.
+
+        var a = [1, 15, 30, 32, 39];
+        var b = [4, 9, 5, 3, 6];
+        var n = a.length;
+        var median = function (a, b, n) {
+            var i = 0, j = 0;
+            var count;
+            var m1 = -1, m2 = -1;
+
+            for (count = 0; count <= n; count++) {
+                if (i == n) {
+                    m1 = m2;
+                    m2 = b[0]; break;
+                }
+                else if (j == n) {
+                    m1 = m2;
+                    m2 = a[0]; break;
+                }
+                if (a[i] <= b[j]) {
+                    m1 = m2;
+                    m2 = a[i];
+                    i++;
+                }
+                else {
+                    m1 = m2;
+                    m2 = b[j];
+                    j++;
+                }
+
+            }
+            return (m1 + m2) / 2;
+        }
+        console.log(median(a, b, n));
+
+
+        //Removing duplicates from an array 
+
+        var NumArray = [1, 1, 2, 3, 5, 7, 7, 8, 9, 9, 10]
+
+        var result1 = function (arr) {
+            return arr.filter((item, index) => arr.indexOf(item) === index);
+        }
+        console.log(result1(NumArray));
+
+
+        //Rotating an array by K times 
+
+        var nums = [1, 2, 3, 4, 5];
+        var k = 3;
+
+        const rotateArray1 = function (nums, k) {
+            for (let i = 0; i < k; i++) 
+                nums.unshift(nums.pop());
+            return nums;
+        }
+        console.log(rotateArray1(nums, k));
+
+
+
+    </script>
+</body>
+
+</html>
