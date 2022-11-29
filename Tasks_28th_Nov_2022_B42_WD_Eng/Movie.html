@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //creating a movie class
+
+        class Movie {
+            constructor(title,studio,rating) {
+                this.title = title;
+                this.studio = studio;
+                if(rating == null) 
+                    this.rating = "PG";
+                else    
+                    this.rating = rating;
+            }
+            getPG(arr){
+                let result=[];
+                for(var i in arr){
+                    if(arr[i].rating === "PG")
+                    result.push(arr[i].title)}  // returning an array which contains only the Movie names 
+                return result;  
+            }
+        }
+        var m1 = new Movie("Avengers","Marvel","R");
+        var m2 = new Movie("Casino Royale","Eon Productions","PG")
+        var m3 = new Movie("MI series","Paramount");
+
+        let arr = [m1,m2,m3];
+
+        console.log(m3.getPG(arr));     //displaying the movie names which are rated PG
+
+        
+
+
+    </script>
+</body>
+</html>
