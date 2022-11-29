@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //creating a class for calculating the Uber prices
+
+        class uberfare{
+            constructor(start,end){
+                    this.start = start; //start point is considered here
+                    this.end = end; //end distance is assigned here
+                    this.distance = Math.abs(start-end);
+                    this.grossfare = this.distance*30;  // ₹30 per km is considered as base fare for the trip 
+            }
+            getNetFare(arr){
+
+                console.log(`the start point is ${this.start} and the end point is ${this.end}`);
+                console.log(`Your Trip Distance is ${this.distance} kms`);
+                console.log(`Gross fare for the trips is: ₹ ${this.grossfare}/-`);
+
+                let DiscFactor = 15;
+                let final = this.grossfare*(1-(DiscFactor/100));
+                console.log(`Your final Uber fare for the trip after ${DiscFactor}% discount is : ₹ ${final}/-`);
+            }
+        }
+        var trip1 = new uberfare(0,10);
+        var trip2 = new uberfare(25,65);
+
+        let arr = [trip1,trip2];   //two class instances are stored in an array
+
+        trip2.getNetFare(arr);  // method called using the array to show output.
+        
+
+    </script>
+</body>
+</html>

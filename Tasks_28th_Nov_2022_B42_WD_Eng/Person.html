@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class person {  //class is declared here 
+            constructor(name, place, ID, age) {  //assigning imaginary variable using this keyword
+                this.name = name;
+                this.place = place;
+                this.ID = ID;
+                this.age = age;
+            }
+            display(arr) {
+                console.log(arr);
+            }
+        }
+        var detail1 = new person("Sathiya", "Chennai", 100, 30);  //Calling the class using the instance variable
+        var detail2 = new person("xyz", "mumbai", 100, 25);
+
+        let arr = [detail1, detail2];
+        detail2.display(arr); //Displaying the class person entries using methods
+
+
+    </script>
+</body>
+
+</html>
