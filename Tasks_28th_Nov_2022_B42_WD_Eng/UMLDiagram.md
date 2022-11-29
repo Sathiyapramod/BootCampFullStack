@@ -1,3 +1,3 @@
-### UML Diagram in Typescript
+## UML Diagram in Typescript
 
-## This concept will be dealth with Typescript only.
+#### This concept will be dealth with Typescript only.
