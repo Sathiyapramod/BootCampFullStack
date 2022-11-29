@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+            var input = new XMLHttpRequest();
+
+            input.open("GET","https://restcountries.com/v3.1/all");
+
+            input.send();
+
+            input.onload = function(){
+                    let data = input.response;
+                    var result = JSON.parse(data);
+                    
+
+                    //Task 4 - Print the total population of countries using reduce function
+
+                    var Total = result.reduce((acc,element) => acc+element.population,0);  
+                    console.log(Total);  //Displaying the total population of the 250 countries 
+
+
+                
+                }
+
+    </script>
+</body>
+
+</html>

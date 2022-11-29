@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Creating XML HTTP Request object (XHR)
+
+        var input = new XMLHttpRequest();
+
+        //Open an API URL link to the server
+
+        input.open("GET","https://restcountries.com/v3.1/all");
+
+        //sending server link 
+        input.send();
+
+        //onloading the function to the object
+
+        input.onload = function(){
+            var details = input.response //creating a response method to obtain response from server API
+            let result = JSON.parse(details);   //parsing the final data in a readable form
+
+            console.log(result);
+
+            //task 3 - Print the following details name, capital, flag using forEach function
+
+            result.forEach(element => {
+                console.log(element.name.common,element.capital,element.flag);
+                //printing the common name, capital, flag in a single console
+            });
+        }
+
+    </script>
+</body>
+</html>

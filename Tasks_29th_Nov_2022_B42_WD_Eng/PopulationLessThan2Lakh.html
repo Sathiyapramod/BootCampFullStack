@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //creating an XHR object
+        var request = new XMLHttpRequest();
+
+        //Open connections to API 
+        request.open("GET", "https://restcountries.com/v3.1/all");
+
+        //Inititing request to send JSON data
+
+        request.send();
+
+        //Onloading the object to respond from server API
+
+        request.onload = function () {
+            var result = request.response;
+            var data = JSON.parse(result);
+
+            // console.log(data[0]);
+
+            //All Data are stored in an Array
+            //Task 2 - Get all the countries from the Population less than 2 lakh using filter function
+
+            var NamesCommon = data.filter((element) => element.population <= "200000").map((element) => element.name.common);
+            console.log(NamesCommon);  //displaying countries less than 2 lakh with their common names
+
+            var NamesOfficial = data.filter((element) => element.population <= "200000").map((element) => element.name.official);
+            console.log(NamesOfficial); //displaying countries less than 2 lakh with their official names
+
+
+
+
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

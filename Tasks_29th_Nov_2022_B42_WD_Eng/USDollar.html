@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+            var input = new XMLHttpRequest();
+
+            input.open("GET","https://restcountries.com/v3.1/all");
+
+            input.send();
+
+            input.onload = function(){
+                    let data = input.response;
+                    var result = JSON.parse(data);
+                    
+                    //Task5 - Print the country which uses US Dollars as currency
+
+                    var final = result.filter((element) => element?.currencies?.USD).map((value) => value.name.official);
+                    console.log(final);
+
+                    //Use of Optional Chaining concept is utilized here using ? operator
+                    
+                
+                }
+
+    </script>
+</body>
+
+</html>
