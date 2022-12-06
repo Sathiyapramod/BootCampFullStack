@@ -1,21 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-        var a = 70;
-        if(a == 15 || a == 18 || a == 10){
-            console.log(a);
-        }
-        else 
-            console.log("value of a is not equal to 15,18,10");
-        
-    </script>
+        //start-code
 
+        var arr1 = [4, 2, 3, 5].join("");
+        var arr2 = [2, 3, 5, 4].join("");
+        var n = arr1.length; // i.e length of the Array
+        //The objective is to count the number of rotations required to arrive the second array 
+        //here the output will be 1 since only one rotation is required 
+
+        //creating a temporary variable to store the concatenated array
+
+        var temp = arr1 + arr1;
+        let count = 0, final = 0;
+        //Create two dummy variables for performing counting operations
+
+
+        for (var i = 0; i < (temp.length - n); i++) {
+            let result = [];
+            result = temp.slice(i, n + i);
+            //comparing two arrays for their similarity
+            if (result.toString() === arr2.toString()) {
+                final = count;
+                break;
+            }
+            count++;
+        }
+
+        (final > n) ? console.log(Number(final - n)) : console.log(Number(final));
+
+        //end-of-code
+
+
+    </script>
 </body>
+
 </html>
