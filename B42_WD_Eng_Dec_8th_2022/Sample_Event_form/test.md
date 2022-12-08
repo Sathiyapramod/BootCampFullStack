@@ -1,2 +1,3 @@
-  #Sample Survey Form
-  Creation of survey form using SIMPLE application of basic HTML and CSS attributes
+  # Sample Event Addition Card Link
+  
+  Creation of Card link using SIMPLE HTML and CSS attributes
