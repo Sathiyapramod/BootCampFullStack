@@ -60,7 +60,7 @@ form {
 /* to enhance the display properties of star ratings */
 .Rating>label {
     position: relative;
-    width: 0.5em;
+    width: 1em;
     font-size: 2.5vw;
     cursor: pointer;
     color: yellow;
