@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,121 +14,141 @@
 </head>
 
 <body>
-    <form action="" class="mx-auto">
-        <h1>Feedback Form</h1>
-        <div class="names">
-            <div class="firstname">
-                <label for="firstname">Name:</label> <br>
-                <input type="text" id="firstname" placeholder="Enter first Name" required><br>
-
+    <form action="" class="mx-auto p-3">
+        <!-- Title Head for the Form  -->
+        <div class=" fs-1 text-center">Feedback Form</div>
+        <!-- Entering the Names of the User  -->
+        <div class="input-group d-flex justify-content-start gap-3">
+            <div class="firstname d-flex flex-column p-0">
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" placeholder="Enter your first Name" required>
             </div>
-            <div class="lastname">
-                <label for="lastname"></label> <br>
-                <input type="text" id="lastname" placeholder="Enter Last Name" required> <br>
-
+            <div class="lastname d-flex flex-column p-0">
+                <label for="firstname">Last Name:</label>
+                <input type="text" id="firstname" placeholder="Enter your first Name" required>
             </div>
+        </div>
+        <!-- Enterint the Email ID of the User -->
+        <div class="Email-ID d-flex flex-column p-0 justify-content-start">
+            <label for="Email-ID">Email ID</label>
+            <input class="me-auto" type="text" id="firstname" placeholder="Enter your Email" required>
+        </div>
 
+        <!-- Enter the Rating from the User  -->
+        <div class="User-Rating d-flex flex-column gap-0 justify-content-start">
+            <div>
+                <label for="Rating">Your Experience:</label>
+            </div>
+            <div class="Rating">
+                <input type="radio" name="Rating" id="5" value="5"><label for="5">☆</label>
+                <input type="radio" name="Rating" id="4" value="4"><label for="4">☆</label>
+                <input type="radio" name="Rating" id="3" value="3"><label for="3">☆</label>
+                <input type="radio" name="Rating" id="2" value="2"><label for="2">☆</label>
+                <input type="radio" name="Rating" id="1" value="1"><label for="1">☆</label>
+            </div>
         </div>
-        <div class="EmailID">
-            <label for="Email">Email ID</label> <br>
-            <input type="Email" id="Email" placeholder="Enter Email ID please" required> <br>
 
+        <!-- Getting User inputs for assessing the performance of your company  -->
+        <div class="User-experience d-flex flex-column justify-content-start">
+
+            <div class="first text-light">
+                Overall, How would you rate your overall experience with us *</div>
+            <div class="table">
+                <table class="w-100">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Very Satisfied</th>
+                            <th>Satisfied</th>
+                            <th>Happy</th>
+                            <th>Moderate</th>
+                            <th>Very poor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="items">Purchase</td>
+                            <td><input type="radio" name="one" id=""></td>
+                            <td><input type="radio" name="one" id=""></td>
+                            <td><input type="radio" name="one" id=""></td>
+                            <td><input type="radio" name="one" id=""></td>
+                            <td><input type="radio" name="one" id=""></td>
+                        </tr>
+                        <tr>
+                            <td id="items">Service</td>
+                            <td><input type="radio" name="two" id=""></td>
+                            <td><input type="radio" name="two" id=""></td>
+                            <td><input type="radio" name="two" id=""></td>
+                            <td><input type="radio" name="two" id=""></td>
+                            <td><input type="radio" name="two" id=""></td>
+                        </tr>
+                        <tr>
+                            <td id="items">Company Overall</td>
+                            <td><input type="radio" name="three" id=""></td>
+                            <td><input type="radio" name="three" id=""></td>
+                            <td><input type="radio" name="three" id=""></td>
+                            <td><input type="radio" name="three" id=""></td>
+                            <td><input type="radio" name="three" id=""></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <text id="others">How likely you are to * </text>
+                <table class="w-100">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Very Satisfied</th>
+                            <th>Satisfied</th>
+                            <th>Happy</th>
+                            <th>Moderate</th>
+                            <th>Very poor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="items">Buy again from us</td>
+                            <td><input type="radio" name="four" id=""></td>
+                            <td><input type="radio" name="four" id=""></td>
+                            <td><input type="radio" name="four" id=""></td>
+                            <td><input type="radio" name="four" id=""></td>
+                            <td><input type="radio" name="four" id=""></td>
+                        </tr>
+                        <tr>
+                            <td id="items">Recommend our product to others</td>
+                            <td><input type="radio" name="five" id=""></td>
+                            <td><input type="radio" name="five" id=""></td>
+                            <td><input type="radio" name="five" id=""></td>
+                            <td><input type="radio" name="five" id=""></td>
+                            <td><input type="radio" name="five" id=""></td>
+                        </tr>
+                        <tr>
+                            <td id="items">Recommend our Company to Others</td>
+                            <td><input type="radio" name="six" id=""></td>
+                            <td><input type="radio" name="six" id=""></td>
+                            <td><input type="radio" name="six" id=""></td>
+                            <td><input type="radio" name="six" id=""></td>
+                            <td><input type="radio" name="six" id=""></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="comments d-flex flex-column justify-content-around align-items-start">
+            <div id="others d-flex">Additional Comments or suggestion box</div>
+            <div class="form-floating w-100">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                    style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Comments</label>
+            </div>
+            <div class="final d-flex" id="final">
+                <a class="btn btn-light" href="#" role="button">Submit</a>
+            </div>
         </div>
 
-        <label for="Rating">Your Experience: </label>
-        <div class="Rating">
-            <input type="radio" name="Rating" id="5" value="5"><label for="5">☆</label>
-            <input type="radio" name="Rating" id="4" value="4"><label for="4">☆</label>
-            <input type="radio" name="Rating" id="3" value="3"><label for="3">☆</label>
-            <input type="radio" name="Rating" id="2" value="2"><label for="2">☆</label>
-            <input type="radio" name="Rating" id="1" value="1"><label for="1">☆</label>
-        </div>
-        <text id="others">Overall, How would you rate your overall experience with us *</text><br>
-        <div class="table">
-            <table>
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>Very Satisfied</th>
-                        <th>Satisfied</th>
-                        <th>Happy</th>
-                        <th>Moderate</th>
-                        <th>Very poor</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td id="items">Purchase</td>
-                        <td><input type="radio" name="one" id=""></td>
-                        <td><input type="radio" name="one" id=""></td>
-                        <td><input type="radio" name="one" id=""></td>
-                        <td><input type="radio" name="one" id=""></td>
-                        <td><input type="radio" name="one" id=""></td>
-                    </tr>
-                    <tr>
-                        <td id="items">Service</td>
-                        <td><input type="radio" name="two" id=""></td>
-                        <td><input type="radio" name="two" id=""></td>
-                        <td><input type="radio" name="two" id=""></td>
-                        <td><input type="radio" name="two" id=""></td>
-                        <td><input type="radio" name="two" id=""></td>
-                    </tr>
-                    <tr>
-                        <td id="items">Company Overall</td>
-                        <td><input type="radio" name="three" id=""></td>
-                        <td><input type="radio" name="three" id=""></td>
-                        <td><input type="radio" name="three" id=""></td>
-                        <td><input type="radio" name="three" id=""></td>
-                        <td><input type="radio" name="three" id=""></td>
-                    </tr>
-                </tbody>
-            </table>
-            <text id="others">How likely you are to * </text>
-            <table>
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>Very Satisfied</th>
-                        <th>Satisfied</th>
-                        <th>Happy</th>
-                        <th>Moderate</th>
-                        <th>Very poor</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td id="items">Buy again from us</td>
-                        <td><input type="radio" name="four" id=""></td>
-                        <td><input type="radio" name="four" id=""></td>
-                        <td><input type="radio" name="four" id=""></td>
-                        <td><input type="radio" name="four" id=""></td>
-                        <td><input type="radio" name="four" id=""></td>
-                    </tr>
-                    <tr>
-                        <td id="items">Recommend our product to others</td>
-                        <td><input type="radio" name="five" id=""></td>
-                        <td><input type="radio" name="five" id=""></td>
-                        <td><input type="radio" name="five" id=""></td>
-                        <td><input type="radio" name="five" id=""></td>
-                        <td><input type="radio" name="five" id=""></td>
-                    </tr>
-                    <tr>
-                        <td id="items">Recommend our Company to Others</td>
-                        <td><input type="radio" name="six" id=""></td>
-                        <td><input type="radio" name="six" id=""></td>
-                        <td><input type="radio" name="six" id=""></td>
-                        <td><input type="radio" name="six" id=""></td>
-                        <td><input type="radio" name="six" id=""></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="comments">
-            <p id="others">Additional Comments or suggestion box</p>
-            <textarea name="textarea" id="Comments" cols=auto rows="10" placeholder="Enter your comments"></textarea>
-        </div>
-        <a href="https:/www.google.com/" target="_blank"><input type="button" value="Submit" id="submit-button"></a>
     </form>
+    <script src="./script.js">
+
+    </script>
 </body>
 
 </html>
