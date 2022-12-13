@@ -3,11 +3,13 @@
 :root {
     --primary-ff: 'Poppins', sans-serif;
     --primary-bgcolor: darkblue;
+    --primary-fontsize: 0.875rem;
 }
 
 * {
     margin: 0px;
     font-family: var(--primary-ff);
+    font-size: var(--primary-fontsize);
     padding: 5px;
     color: whitesmoke;
 }
@@ -31,26 +33,26 @@ form {
     align-content: left;
 }
 
-.firstname,
-.lastname {
-    flex-wrap: wrap;
-    justify-content: space-between;
+/* .firstname, */
+/* .lastname { */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
 
-}
+/* } */
 
-.EmailID {
-    display: flex;
-    flex-direction: column;
-    align-content: left;
-    width: 250px;
-    text-align: left;
-}
+/* .EmailID { */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-content: left; */
+    /* width: 250px; */
+    /* text-align: left; */
+/* } */
 
-.Rating {
+/* .Rating {
     display: flex;
     flex-direction: row-reverse;
     justify-content: left;
-}
+} */
 
 .Rating>input {
     display: none;
@@ -102,13 +104,12 @@ tr:nth-child(odd) {
     background-color: rgba(rgb(181, 165, 165), rgb(111, 128, 0), rgb(0, 162, 255), alpha)
 }
 
-textarea {
-    width: 750px;
-    height: 100px;
-    overflow: scroll;
+/* textarea { */
+    
+    /* overflow: scroll;
     background-color: white;
     color: black;
-}
+} */
 
 #submit-button {
     border-radius: 4px;
